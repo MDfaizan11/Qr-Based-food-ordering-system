@@ -1,0 +1,94 @@
+.user_heading h1 {
+  margin-top: 15px;
+}
+.table_main_wrapper {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.table_order {
+  justify-content: space-around;
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+}
+/* CSS for the table */
+.table_main_wrapper {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.table_main_wrapper p {
+  margin: 5px 0;
+}
+
+.table_order_wrapper {
+  padding: 10px;
+}
+
+.table_order {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+/* CSS for the table layout */
+table {
+  width: 95%;
+  border-collapse: collapse;
+  margin-left: 20px;
+}
+
+table td,
+table th {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+/* CSS for responsive design */
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .order_heading {
+    font-size: 24px;
+  }
+  .table_section {
+    margin-top: 25px;
+  }
+  table {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  table td,
+  table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .table_main_wrapper p {
+    margin: 5px 0;
+    font-size: 12px;
+  }
+  .table_order_wrapper {
+    padding: 5px;
+  }
+
+  .table_order {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+  }
+}

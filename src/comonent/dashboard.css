@@ -1,0 +1,128 @@
+.link_side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  height: 100vh;
+  background: #a82c48;
+  gap: 7%;
+  padding-top: 25px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.main {
+  display: flex;
+}
+.dash_link {
+  text-decoration: none;
+  border-bottom: none;
+  color: white;
+  margin-left: 35px;
+}
+.outlet_side {
+  width: 75%;
+  overflow-y: auto;
+  margin-left: 25%;
+}
+
+.toggle-btn {
+  display: none;
+  cursor: pointer;
+}
+.dash_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.check_order {
+  height: 267px;
+  width: 400px;
+  background-color: whitesmoke;
+  box-shadow: 1px 1px 8px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.check_order h3 {
+  font-size: 30px;
+}
+.desh_images {
+  height: 170px;
+  width: 170px;
+  overflow: hidden;
+}
+.desh_images img {
+  height: 100%;
+  width: 100%;
+}
+.dash_nav {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .admin_heading h1 {
+    font-size: 21px;
+    margin-top: 15px;
+  }
+  .check_order {
+    height: 240px;
+    width: 207px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 8px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .dash_wrapper h1 {
+    font-size: large;
+  }
+}
+@media (max-width: 768px) {
+  .check_order {
+    height: 261px;
+    width: 234px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 8px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .outlet_side {
+    width: 75%;
+    overflow-y: auto;
+    margin-left: 5%;
+  }
+
+  .link_side {
+    width: 0;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .closed .toggle-btn {
+    font-size: 28px;
+    margin-top: 5px;
+  }
+
+  .open .toggle-btn {
+    display: none;
+  }
+  .open .link_side {
+    width: 200px;
+    z-index: 1;
+    font-size: 16px;
+  }
+}
